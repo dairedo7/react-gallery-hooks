@@ -1,8 +1,8 @@
 {
-  "name": "react-assignment-pictures-gallery",
+  "name": "react-gallery-hooks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dairedo7.github.io/react-assignment-pictures-gallery/",
+  "homepage": "https://dairedo7.github.io/react-gallery-hooks/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",

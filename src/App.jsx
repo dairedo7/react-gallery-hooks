@@ -93,6 +93,7 @@ export function App() {
       {status === 'resolved' && pictures.length === 0 && (
         <h2 className="error__message">
           No results found for '{value}' request!
+          {error}
         </h2>
       )}
 
