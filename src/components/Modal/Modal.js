@@ -28,7 +28,7 @@ export function Modal({ onClose, largeImageURL }) {
   return createPortal(
     <div className={styles.overlay} onClick={handleClick}>
       <div className={styles.modal}>
-        <img className={styles.img} src={largeImageURL} />
+        <img className={styles.img} src={largeImageURL} alt={largeImageURL} />
       </div>
     </div>,
     modalRoot

@@ -8,7 +8,7 @@ import Button from 'components/Button/Button';
 import { Modal } from 'components/Modal/Modal';
 import fetchPicturesWithQuery from './components/Services/API.js';
 import markup from './components/Services/renderMarkup';
-import { render } from '@testing-library/react';
+
 // import Status from 'components/Services/Status';
 
 export function App() {
@@ -27,6 +27,7 @@ export function App() {
     }
     setVisibleButton(false);
     handleRequest();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value, page]);
 
   const updateQuery = text => {
