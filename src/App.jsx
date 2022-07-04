@@ -75,6 +75,15 @@ export function App() {
     setModal(!showModal);
   };
 
+  const makeVisibleBtn = async () => {
+    const data = await fetchPicturesWithQuery(value, page);
+    const { totalHits } = data;
+
+    return totalHits !== pictures.length
+      ? setVisibleButton(true)
+      : setVisibleButton(false);
+  };
+
   return (
     <>
       {showModal && <Modal largeImageURL={modalItem} onClose={toggleModal} />}
@@ -97,7 +106,7 @@ export function App() {
         </h2>
       )}
 
-      {status === 'resolved' && visibleButton && (
+      {status === 'resolved' && makeVisibleBtn() && visibleButton && (
         <Button loadMorePictures={handleAddPage} />
       )}
     </>
